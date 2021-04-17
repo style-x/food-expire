@@ -1,18 +1,13 @@
-// import React from 'react'
-import PropTypes from 'prop-types'
-import Button from './Button'
+import AddButton from './AddButton'
+import SortButton from './SortButton'
 
-const Header = ({ title }) => {
+const Header = () => {
   return (
     <header className='header'>
-      <Button color='green' text='sort' />
-      <Button color='blue' text='ADD' />
+      <SortButton />
+      <AddButton />
     </header>
   )
-}
-
-Header.defaultProps = {
-  title: 'Food Expire',
 }
 
 export default Header

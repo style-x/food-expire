@@ -1,10 +1,6 @@
-const Food = ({ food }) => {
+const Food = () => {
   return (
-    <>
-      {food.map((food) => (
-        <h3 key={food.id}>{food.text}</h3>
-      ))}
-    </>
+    <h3>Hier kommt das Essen..</h3>
   )
 }
 
