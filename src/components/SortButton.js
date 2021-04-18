@@ -1,25 +1,22 @@
-import React from 'react';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
+import React from 'react'
+import Button from '@material-ui/core/Button';
 
-export default function SortButton() {
-  const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-  });
+function SortButton() {
+  const [sort, setSort] = React.useState(true);
 
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+  const handleClick = () => {
+    setSort(!sort);
   };
 
   return (
-    <FormGroup row>
-      <FormControlLabel
-        control={<Switch checked={state.checkedA} onChange={handleChange} name="checkedA" />}
-        label="Sortierung"
-      />
-    </FormGroup>
+    <Button 
+      variant="outlined" 
+      color={sort ? "primary" : "secondary"}
+      onClick={handleClick}
+    >
+    Sort: {sort ? "Date" : "Addet"}
+    </Button>
   );
 }
 
+export default SortButton
