@@ -4,7 +4,7 @@ const Food = () => {
   const [notes, setNotes] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8000/Schrank')
+    fetch('http://localhost:8000/Food')
       .then(res => res.json())
       .then(data => setNotes(data))
   }, [])
