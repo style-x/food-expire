@@ -1,0 +1,42 @@
+{
+  "Schrank": [
+    {
+      "id": 1,
+      "name": "Milch",
+      "details": "1,5% fettreduziert",
+      "exp-date": "25.06.2021"
+    },
+    {
+      "id": 2,
+      "name": "Müsli",
+      "details": "Double Schoko",
+      "exp-date": "10.08.2021"
+    },
+    {
+      "id": 3,
+      "name": "Senf",
+      "details": "Löwensenf mittelscharf",
+      "exp-date": "07.10.2021"
+    }
+  ],
+  "Kühlschrank": [
+    {
+      "id": 4,
+      "name": "Hackfleisch",
+      "details": "500g gemischt",
+      "exp-date": "28.04.2021"
+    },
+    {
+      "id": 5,
+      "name": "Joghurt",
+      "details": "Mit der Ecke",
+      "exp-date": "08.05.2021"
+    },
+    {
+      "id": 6,
+      "name": "Käse",
+      "details": "Gouda mittelalt",
+      "exp-date": "04.06.2021"
+    }
+  ]
+}

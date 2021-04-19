@@ -1,11 +1,20 @@
-import SortButton from './SortButton'
+import React, { useEffect, useState } from 'react'
 
 const Food = () => {
+  const [notes, setNotes] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/Schrank')
+      .then(res => res.json())
+      .then(data => setNotes(data))
+  }, [])
+
   return (
-    <>
-      <h3>Hier kommt das Essen..</h3>
-      { SortButton }
-    </>
+    <div>
+      {notes.map(note => (
+        <p key={note.id}>{ note.name }</p>
+      ))}
+    </div>
   )
 }
 
