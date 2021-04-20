@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
+import { Container } from '@material-ui/core'
+import FoodCard from './FoodCard'
 
 const Food = () => {
   const [notes, setNotes] = useState([])
@@ -10,11 +14,15 @@ const Food = () => {
   }, [])
 
   return (
-    <div>
-      {notes.map(note => (
-        <p key={note.id}>{ note.name }</p>
-      ))}
-    </div>
+    <Container>
+      <Grid container>
+        {notes.map(note => (
+          <Grid item key={note.id} xs={12} sm={6} md={3}> 
+          <FoodCard note={note} />
+        </Grid>
+        ))}
+      </Grid>
+    </Container>
   )
 }
 
