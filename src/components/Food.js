@@ -15,7 +15,7 @@ const Food = () => {
 
   return (
     <Container>
-      <Grid container>
+      <Grid container spacing={3}>
         {notes.map(note => (
           <Grid item key={note.id} xs={12} sm={6} md={3}> 
           <FoodCard note={note} />
