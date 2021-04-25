@@ -4,8 +4,8 @@
       "id": 1,
       "name": "Milch",
       "details": "1,5% fettreduziert",
-      "count": 3,
-      "exp-date": "25.06.2021",
+      "count": 1,
+      "expdate": "10.08.2021",
       "location": "Schrank"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Müsli",
       "details": "Double Schoko",
       "count": 1,
-      "exp-date": "10.08.2021",
+      "expdate": "10.08.2021",
       "location": "Schrank"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Senf",
       "details": "Löwensenf mittelscharf",
       "count": 1,
-      "exp-date": "07.10.2021",
+      "expdate": "07.10.2021",
       "location": "Schrank"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Hackfleisch",
       "details": "500g gemischt",
       "count": 1,
-      "exp-date": "28.04.2021",
+      "expdate": "28.04.2021",
       "location": "Kühlschrank"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Joghurt",
       "details": "Mit der Ecke",
       "count": 2,
-      "exp-date": "08.05.2021",
+      "expdate": "08.05.2021",
       "location": "Kühlschrank"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Käse",
       "details": "Gouda mittelalt",
       "count": 1,
-      "exp-date": "04.06.2021",
+      "expdate": "04.06.2021",
       "location": "Kühlschrank"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Eis",
       "details": "Nogger",
       "count": 3,
-      "exp-date": "01.09.2021",
+      "expdate": "01.09.2021",
       "location": "Gefrierschrank"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Pizza",
       "details": "Spinat",
       "count": 2,
-      "exp-date": "04.06.2021",
+      "expdate": "04.06.2021",
       "location": "Gefrierschrank"
     }
   ]

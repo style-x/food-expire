@@ -13,12 +13,20 @@ const Food = () => {
       .then(data => setNotes(data))
   }, [])
 
+  const handleDelete = async (id) => {
+    await fetch('http://localhost:8000/Food/' + id, {
+      method: 'DELETE'
+    })
+    const newFood = notes.filter(note => Node.id != id)
+    setNotes(newFood)
+  }
+
   return (
     <Container>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         {notes.map(note => (
           <Grid item key={note.id} xs={12} sm={6} md={3}> 
-          <FoodCard note={note} />
+          <FoodCard note={note} handleDelete={handleDelete} />
         </Grid>
         ))}
       </Grid>
