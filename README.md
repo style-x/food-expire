@@ -17,7 +17,7 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 -------------
-You need to install "json-server" globaly.
+You need to install "json-server" global.
 ### `npm i -g json-server`
 
 Start the JSON-Server with this command:
