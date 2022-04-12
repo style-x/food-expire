@@ -12,7 +12,7 @@ import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
 import { useHistory } from 'react-router-dom'
 
-function add() {
+function Add() {
   const classes = useStyles()
   const history = useHistory()
   const [title, setTitle] = useState('')
@@ -97,4 +97,4 @@ function add() {
   )
 }
 
-export default add
+export default Add;
